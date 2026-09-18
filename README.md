@@ -28,6 +28,11 @@ lola market add aap-sizing https://raw.githubusercontent.com/iamgini/ansible-aap
 lola install ansible-aap-sizing-skill -a claude-code --scope user
 ```
 
+> **How Lola installs:** Lola clones the repo to `~/.lola/` and injects the module instructions
+> into `~/.claude/CLAUDE.md` — it does **not** create a directory in `~/.claude/skills/`.
+> This is expected; the skill will appear as `ansible-aap-sizing` (vs `ansible-aap-sizing-skill`
+> for the git+symlink method). Both work — the skill name difference is by design.
+
 Python 3.9+ and stdlib only — no additional dependencies required.
 
 ## Layout

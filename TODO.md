@@ -39,7 +39,8 @@
 
 - [x] Package as a [Lola](https://github.com/lola-ai/lola) module — `module/` structure with
   `AGENTS.md`, `mcps.json`, `skills/ansible-aap-sizing/SKILL.md` and `lola-market.yml` at repo root.
-  Install: `lola market add aap-sizing <raw-url> && lola install ansible-aap-sizing-skill -a claude-code`
+  Lola clones to `~/.lola/` and injects into `~/.claude/CLAUDE.md` (not `~/.claude/skills/`).
+  Skill loads as `ansible-aap-sizing` via Lola vs `ansible-aap-sizing-skill` via git+symlink.
 
 ## v3 — Stretch Goals
 
