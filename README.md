@@ -20,11 +20,11 @@ ln -s ~/ansible/ansible-aap-sizing-skill ~/.claude/skills/ansible-aap-sizing-ski
 # Codex / Gemini / Cursor: ~/.agents/skills/ansible-aap-sizing-skill
 ```
 
-**Option 2 — [Lola](https://github.com/lola-ai/lola) package manager** _(coming in v2)_:
+**Option 2 — [Lola](https://github.com/lola-ai/lola) package manager:**
 
 ```bash
-# Once published to a Lola marketplace:
 pip install lola-ai
+lola market add aap-sizing https://raw.githubusercontent.com/iamgini/ansible-aap-sizing-skill/main/lola-market.yml
 lola install ansible-aap-sizing-skill -a claude-code --scope user
 ```
 

@@ -37,11 +37,9 @@
 - [ ] Automated right-sizing recommendations for existing clusters: compare current resource usage
   against sizing model, flag over- or under-provisioned nodes
 
-- [ ] Package as a [Lola](https://github.com/lola-ai/lola) module and register in a `lola-market.yml`
-  marketplace so users can install with a single command:
-  `lola install ansible-aap-sizing-skill -a claude-code --scope user`
-  (Lola writes to `~/.claude/skills/` — same destination as the symlink method, adds lifecycle
-  management and discoverability alongside AI Forge modules)
+- [x] Package as a [Lola](https://github.com/lola-ai/lola) module — `module/` structure with
+  `AGENTS.md`, `mcps.json`, `skills/ansible-aap-sizing/SKILL.md` and `lola-market.yml` at repo root.
+  Install: `lola market add aap-sizing <raw-url> && lola install ansible-aap-sizing-skill -a claude-code`
 
 ## v3 — Stretch Goals
 

@@ -1,0 +1,15 @@
+---
+name: AAP Sizing Marketplace
+description: AI agent skill for sizing Red Hat Ansible Automation Platform deployments
+version: 0.1.0
+modules:
+  - name: ansible-aap-sizing-skill
+    description: >-
+      Size Red Hat Ansible Automation Platform deployments — maps your use case to topology,
+      node bill of materials, Automation Mesh design, component resource specs (Controller,
+      Hub, EDA, Gateway, PostgreSQL), OCP Operator pod requests/limits, and indicative cost.
+      Covers containerized RHEL and OCP Operator deployments for AAP 2.6 and 2.7.
+    version: 0.1.0
+    repository: https://github.com/iamgini/ansible-aap-sizing-skill.git
+    path: module
+    tags: [ansible, aap, sizing, infrastructure, openshift, ocp, automation-platform]
